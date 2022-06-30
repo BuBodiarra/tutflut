@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
-class QuestionResponse extends Equatable{
+class Question extends Equatable{
 
   final String category;
   final String difficulty;
@@ -9,7 +9,7 @@ class QuestionResponse extends Equatable{
   final String correctQuestion;
   final List<String> incorrectAnswer;
 
-  const QuestionResponse({
+  const Question({
 
     required this.category,
     required this.difficulty,
@@ -30,16 +30,4 @@ class QuestionResponse extends Equatable{
 
   ];
 
-  factory QuestionResponse.fromMap(Map<String,dynamic>map){
-    //if(map == null) return null;
-
-
-    return QuestionResponse(
-      category: map ["category"] ?? "",
-      difficulty: map ["difficulty"] ?? "",
-      question: map ["question"] ?? "",
-      correctQuestion: map ["correctQuestion"] ?? "",
-      incorrectAnswer: List<String>.from(map ["incorrectAnswer"] ?? []),
-    );
-  }
 }
