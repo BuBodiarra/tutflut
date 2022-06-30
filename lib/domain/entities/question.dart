@@ -6,16 +6,16 @@ class Question extends Equatable{
   final String category;
   final String difficulty;
   final String question;
-  final String correctQuestion;
-  final List<String> incorrectAnswer;
+  final String correctAnswer;
+  final List<String> answers;
 
   const Question({
 
     required this.category,
     required this.difficulty,
     required this.question,
-    required this.correctQuestion,
-    required this.incorrectAnswer
+    required this.correctAnswer,
+    required this.answers
 
   });
 
@@ -25,8 +25,8 @@ class Question extends Equatable{
     category,
     difficulty,
     question,
-    correctQuestion,
-    incorrectAnswer
+    correctAnswer,
+    answers
 
   ];
 
