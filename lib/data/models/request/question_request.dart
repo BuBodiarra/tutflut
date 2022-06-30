@@ -19,7 +19,6 @@ class QuestionRequest extends Equatable{
 
   //implementation de dio pour faire des requetes
   Map<String, dynamic> toMap() {
-
     final queryParameters = {
       "type" : type,
       "amount": amount,
